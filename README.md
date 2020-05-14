@@ -4,6 +4,6 @@
 
 ./gradlew task startContainer
 
-#Swagger
+# Swagger
 
-aml-cargas/swagger-ui.html#/aml-cargas-controller/processFileUsingPOST
+{host}:port/aml-cargas/swagger-ui.html#/aml-cargas-controller/processFileUsingPOST
