@@ -7,7 +7,7 @@ spring:
 
 
 path:
-  storage: /opt/DONDE/finacen/cargas/
+  storage: /opt/DONDE/SOFOM/CARGAS/
   bath: /opt/DONDE/shellsPLD
 
 ---
@@ -15,22 +15,22 @@ spring:
   profiles: dev
   datasource:
     url:
-      jdbc:sqlserver://10.30.5.40:1434;instanceName=MSSQLS08;databaseName=DONDE_PROD
+      jdbc:sqlserver://169.57.33.18:1435;instanceName=MSSQLS08;databaseName=FINACEN_UAT
     username:
-      DONDE_APP
+      FINACEN_APP_UAT
     password:
-      D0ND3_4PP
+      F1N4C3N_4PP
 
 ---
 spring:
   profiles: uat
   datasource:
     url:
-      jdbc:sqlserver://192.168.80.14:1433;instanceName=MSSQLS08;databaseName=BROXEL_UAT
+      jdbc:sqlserver://169.57.33.18:1435;instanceName=MSSQLS08;databaseName=FINACEN_UAT
     username:
-      BROXEL_APP
+      FINACEN_APP_UAT
     password:
-      BR0X3L_4PP
+      F1N4C3N_4PP
 
 ---
 spring:

@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-./gradlew task deleteAndBuildImage
+./gradlew task buildImage
