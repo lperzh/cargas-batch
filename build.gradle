@@ -51,7 +51,7 @@ task createDockerfile(type: Dockerfile, dependsOn: assemble)  {
 	println "destFile --> ${destFile.get().asFile.parentFile}"
 
 	from('openjdk:8u181-jre-slim-stretch')
-	runCommand("mkdir -p /opt/DONDE/")
+	runCommand("mkdir -p /opt/DONDE/shellsPLD")
 	copyFile ("aml-cargas*.jar", '/opt/app.jar')
 
 	exposePort (8080)
